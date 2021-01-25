@@ -1,0 +1,119 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 13/01/21 7:56 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.ManyEnchants.Enchantments.StormSummonerEnchantment$Storms.StormSummoner(StormSummonerEnchantment.java:53) ~[main/:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_17_Storms_StormSummoner_CriticalHitEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.common.ForgeHooks.getCriticalHit(ForgeHooks.java:1007) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.attackTargetEntityWithCurrentItem(PlayerEntity.java:1072) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.multiplayer.PlayerController.attackEntity(PlayerController.java:352) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java:1305) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:1641) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1460) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:953) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:607) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_271] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_271] {}
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:52) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.6.jar:?] {}
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:105) [forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at com.ManyEnchants.Enchantments.StormSummonerEnchantment$Storms.StormSummoner(StormSummonerEnchantment.java:53) ~[main/:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_17_Storms_StormSummoner_CriticalHitEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.common.ForgeHooks.getCriticalHit(ForgeHooks.java:1007) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.attackTargetEntityWithCurrentItem(PlayerEntity.java:1072) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.multiplayer.PlayerController.attackEntity(PlayerController.java:352) ~[forge:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.clickMouse(Minecraft.java:1305) ~[forge:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.processKeyBinds(Minecraft.java:1641) ~[forge:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+-- Affected level --
+Details:
+	All players: 1 total; [ClientPlayerEntity['Dev'/134, l='ClientLevel', x=58.46, y=4.80, z=235.65]]
+	Chunk stats: Client Chunk Cache: 841, 574
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (48,4,176), Chunk: (at 0,0,0 in 3,11; contains blocks 48,0,176 to 63,255,191), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 132697 game time, 1000 day time
+	Server brand: forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.fillCrashReport(ClientWorld.java:447) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2024) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:628) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {re:classloading,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_271] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_271] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_271] {}
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:52) ~[forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.6.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.6.jar:?] {}
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:105) [forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.4
+	Minecraft Version ID: 1.16.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_271, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 245924752 bytes (234 MB) / 1401421824 bytes (1336 MB) up to 2830106624 bytes (2699 MB)
+	CPUs: 8
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 8.0.6+85+master.325de55
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.5-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 35.1
+	Forge: net.minecraftforge:35.1.13
+	FML Language Providers: 
+		javafml@35.1
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.4              |DONE      |a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |Fluffys Many Enchantments!    |manyenchants                  |1.0.5               |DONE      |NOSIGNATURE
+		forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16|Forge                         |forge                         |35.1.13             |DONE      |NOSIGNATURE
+	Crash Report UUID: 4d2e8668-976e-4a9e-b870-f5c6f23ec356
+	Launched Version: MOD_DEV
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: GeForce GTX 1050/PCIe/SSE2 GL version 4.6.0 NVIDIA 457.30, NVIDIA Corporation
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 8x Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz

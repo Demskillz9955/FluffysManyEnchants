@@ -1,0 +1,119 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 03/01/21 1:06 PM
+Description: Ticking player
+
+java.lang.NullPointerException: Ticking player
+	at UtilStuff.EnchantmentUtils.EffectAddPLayer(EnchantmentUtils.java:23) ~[main/:?] {re:classloading}
+	at com.ManyEnchants.Enchantments.SoulSeekerEnchantment$SoulSeeking.Seek(SoulSeekerEnchantment.java:60) ~[main/:?] {re:classloading}
+	at com.ManyEnchants.Enchantments.SoulSeekerEnchantment$SoulSeeking.SoulSeeker(SoulSeekerEnchantment.java:45) ~[main/:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_11_SoulSeeking_SoulSeeker_LivingDeathEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.common.ForgeHooks.onLivingDeath(ForgeHooks.java:349) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.ServerPlayerEntity.onDeath(ServerPlayerEntity.java:478) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:1059) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.attackEntityFrom(PlayerEntity.java:814) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.player.ServerPlayerEntity.attackEntityFrom(ServerPlayerEntity.java:597) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.monster.SlimeEntity.dealDamage(SlimeEntity.java:230) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.monster.SlimeEntity.onCollideWithPlayer(SlimeEntity.java:222) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.collideWithPlayer(PlayerEntity.java:546) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.player.PlayerEntity.livingTick(PlayerEntity.java:517) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.LivingEntity.tick(LivingEntity.java:2158) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.tick(PlayerEntity.java:223) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.player.ServerPlayerEntity.playerTick(ServerPlayerEntity.java:404) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.network.play.ServerPlayNetHandler.tick(ServerPlayNetHandler.java:207) ~[forge:?] {re:classloading}
+	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:226) ~[forge:?] {re:classloading}
+	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:134) ~[forge:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:864) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:786) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:78) ~[forge:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:641) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:232) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at UtilStuff.EnchantmentUtils.EffectAddPLayer(EnchantmentUtils.java:23) ~[main/:?] {re:classloading}
+	at com.ManyEnchants.Enchantments.SoulSeekerEnchantment$SoulSeeking.Seek(SoulSeekerEnchantment.java:60) ~[main/:?] {re:classloading}
+	at com.ManyEnchants.Enchantments.SoulSeekerEnchantment$SoulSeeking.SoulSeeker(SoulSeekerEnchantment.java:45) ~[main/:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_11_SoulSeeking_SoulSeeker_LivingDeathEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.common.ForgeHooks.onLivingDeath(ForgeHooks.java:349) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.ServerPlayerEntity.onDeath(ServerPlayerEntity.java:478) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.LivingEntity.attackEntityFrom(LivingEntity.java:1059) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.attackEntityFrom(PlayerEntity.java:814) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.player.ServerPlayerEntity.attackEntityFrom(ServerPlayerEntity.java:597) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.monster.SlimeEntity.dealDamage(SlimeEntity.java:230) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.monster.SlimeEntity.onCollideWithPlayer(SlimeEntity.java:222) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.collideWithPlayer(PlayerEntity.java:546) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.player.PlayerEntity.livingTick(PlayerEntity.java:517) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.LivingEntity.tick(LivingEntity.java:2158) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.tick(PlayerEntity.java:223) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+-- Player being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.entity.player.ServerPlayerEntity)
+	Entity ID: 97
+	Entity Name: Dev
+	Entity's Exact location: -7.36, 5.09, 232.79
+	Entity's Block location: World: (-8,5,232), Chunk: (at 8,0,8 in -1,14; contains blocks -16,0,224 to -1,255,239), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
+	Entity's Momentum: -0.37, 0.25, -0.14
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.player.ServerPlayerEntity.playerTick(ServerPlayerEntity.java:404) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.network.play.ServerPlayNetHandler.tick(ServerPlayNetHandler.java:207) ~[forge:?] {re:classloading}
+	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:226) ~[forge:?] {re:classloading}
+	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:134) ~[forge:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:864) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:786) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:78) ~[forge:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:641) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:232) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_251] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.4
+	Minecraft Version ID: 1.16.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_251, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 268153880 bytes (255 MB) / 1401946112 bytes (1337 MB) up to 2830106624 bytes (2699 MB)
+	CPUs: 8
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 8.0.6+85+master.325de55
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.5-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 35.1
+	Forge: net.minecraftforge:35.1.13
+	FML Language Providers: 
+		javafml@35.1
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.4              |DONE      |a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |Fluffys Many Enchantments!    |manyenchants                  |1.0.1               |DONE      |NOSIGNATURE
+		forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16|Forge                         |forge                         |35.1.13             |DONE      |NOSIGNATURE
+	Crash Report UUID: 3f01cc2d-1cb5-4260-b77b-26c2ae62acf6
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/97, l='ServerLevel[New World]', x=-7.36, y=5.09, z=232.79]]
+	Data Packs: vanilla, mod:manyenchants, mod:forge
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'

@@ -1,0 +1,99 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 13/01/21 8:04 PM
+Description: Ticking player
+
+java.lang.Error: Unresolved compilation problem: 
+	The method SummonStorm(World) in the type EnchantmentUtils is not applicable for the arguments (World, null)
+
+	at com.ManyEnchants.Enchantments.DolphinBlessedEnchantment$Blessing.DolphinBless(DolphinBlessedEnchantment.java:56) ~[main/:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_4_Blessing_DolphinBless_PlayerTickEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.fml.hooks.BasicEventHooks.onPlayerPreTick(BasicEventHooks.java:85) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.tick(PlayerEntity.java:196) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.entity.player.ServerPlayerEntity.playerTick(ServerPlayerEntity.java:404) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.network.play.ServerPlayNetHandler.tick(ServerPlayNetHandler.java:207) ~[forge:?] {re:classloading}
+	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:226) ~[forge:?] {re:classloading}
+	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:134) ~[forge:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:864) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:786) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:78) ~[forge:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:641) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:232) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_271] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at com.ManyEnchants.Enchantments.DolphinBlessedEnchantment$Blessing.DolphinBless(DolphinBlessedEnchantment.java:56) ~[main/:?] {re:classloading}
+	at net.minecraftforge.eventbus.ASMEventHandler_4_Blessing_DolphinBless_PlayerTickEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297) ~[eventbus-3.0.5-service.jar:?] {}
+	at net.minecraftforge.fml.hooks.BasicEventHooks.onPlayerPreTick(BasicEventHooks.java:85) ~[forge:?] {re:classloading}
+	at net.minecraft.entity.player.PlayerEntity.tick(PlayerEntity.java:196) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+-- Player being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.entity.player.ServerPlayerEntity)
+	Entity ID: 14
+	Entity Name: Dev
+	Entity's Exact location: 6.50, 4.00, 186.50
+	Entity's Block location: World: (6,4,186), Chunk: (at 6,0,10 in 0,11; contains blocks 0,0,176 to 15,255,191), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.entity.player.ServerPlayerEntity.playerTick(ServerPlayerEntity.java:404) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.network.play.ServerPlayNetHandler.tick(ServerPlayNetHandler.java:207) ~[forge:?] {re:classloading}
+	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:226) ~[forge:?] {re:classloading}
+	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:134) ~[forge:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:864) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:786) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:78) ~[forge:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:641) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:232) ~[forge:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_271] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.4
+	Minecraft Version ID: 1.16.4
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_271, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 707897568 bytes (675 MB) / 1444413440 bytes (1377 MB) up to 2830106624 bytes (2699 MB)
+	CPUs: 8
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 8.0.6+85+master.325de55
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-3.0.5-service.jar eventbus PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-2.2.0-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 35.1
+	Forge: net.minecraftforge:35.1.13
+	FML Language Providers: 
+		javafml@35.1
+		minecraft@1
+	Mod List: 
+		client-extra.jar                                  |Minecraft                     |minecraft                     |1.16.4              |DONE      |a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		main                                              |Fluffys Many Enchantments!    |manyenchants                  |1.0.5               |DONE      |NOSIGNATURE
+		forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16|Forge                         |forge                         |35.1.13             |DONE      |NOSIGNATURE
+	Crash Report UUID: 32abc58b-cbc5-499e-8069-dd7ebdab15c2
+	Player Count: 1 / 8; [ServerPlayerEntity['Dev'/14, l='ServerLevel[New World]', x=6.50, y=4.00, z=186.50]]
+	Data Packs: vanilla, mod:manyenchants, mod:forge
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'
