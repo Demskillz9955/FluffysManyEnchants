@@ -75,7 +75,7 @@ public static void Breakable(LivingAttackEvent event) {
 	LivingEntity player = event.getEntityLiving();
 	if(player.hasItemInSlot(EquipmentSlotType.MAINHAND) && EnchantmentHelper.getEnchantmentLevel(CurseEnchantments.BREAKABLE.get(), player.getItemStackFromSlot(EquipmentSlotType.MAINHAND)) >= 0) {
 		if(player.getHeldItemMainhand().isDamageable() == true) {
-			EnchantmentUtils.DamageItemInHandEntity(player, null, EquipmentSlotType.MAINHAND, player.getItemStackFromSlot(EquipmentSlotType.MAINHAND).getMaxDamage() / 2);
+			EnchantmentUtils.DamageItemInHandEntity(player, null, EquipmentSlotType.MAINHAND, 200);
 		}
 		 
 	  }
