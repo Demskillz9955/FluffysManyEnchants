@@ -16,20 +16,23 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import net.minecraftforge.common.ForgeConfigSpec.IntValue;
 import net.minecraftforge.event.TickEvent.PlayerTickEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import util.Config;
+import util.Config.EnchantmentLevels;
 import util.EnchantmentUtils;
 
 public class SwiftnessEnchantment extends Enchantment{
 public static int UpgradeValue = 0;
-public static int MaxLevel = 3;
+public static int MaxLevel;
 	protected SwiftnessEnchantment(Rarity rarityIn, EnchantmentType armorLegs, EquipmentSlotType[] slots) {
 		super(rarityIn, armorLegs, slots);
-		// TODO Auto-generated constructor stub
+	
 	}
 	@Override
 	public int getMinLevel() {
@@ -59,9 +62,11 @@ public static int MaxLevel = 3;
 	public void  setUpgradeValue(int amount) {
 	 UpgradeValue = amount;
 	}
+	
 	 @Override
 	  public ITextComponent getDisplayName(int level) {
 	      IFormattableTextComponent iformattabletextcomponent = new TranslationTextComponent(this.getName());
+	
 	      if (this.isCurse()) {
 	         iformattabletextcomponent.mergeStyle(TextFormatting.RED);
 	      } else {
@@ -87,13 +92,11 @@ public static int MaxLevel = 3;
 		EnchantmentUtils.AddEffectBasedOnLevelEntity(entity, Enchantments.SWIFTNESS.get(), 1,10, Effects.SPEED, EquipmentSlotType.LEGS);
 		EnchantmentUtils.AddEffectBasedOnLevelEntity(entity, Enchantments.SWIFTNESS.get(), 2,10, Effects.SPEED, EquipmentSlotType.LEGS);
 		EnchantmentUtils.AddEffectBasedOnLevelEntity(entity, Enchantments.SWIFTNESS.get(), 3,10, Effects.SPEED, EquipmentSlotType.LEGS);
-		if(UpgradeValue > 0) {
-			EnchantmentUtils.AddEffectBasedOnLevelEntity(entity, Enchantments.SWIFTNESS.get(), UpgradeValue,10, Effects.SPEED, EquipmentSlotType.LEGS);
-			EnchantmentUtils.AddEffectBasedOnLevelEntity(entity, Enchantments.SWIFTNESS.get(), UpgradeValue + 1,10, Effects.SPEED, EquipmentSlotType.LEGS);
-			EnchantmentUtils.AddEffectBasedOnLevelEntity(entity, Enchantments.SWIFTNESS.get(), UpgradeValue + 2,10, Effects.SPEED, EquipmentSlotType.LEGS);
-		}
-				
-
+		EnchantmentUtils.AddEffectBasedOnLevelEntity(entity, Enchantments.SWIFTNESS.get(), 4,10, Effects.SPEED, EquipmentSlotType.LEGS);
+		EnchantmentUtils.AddEffectBasedOnLevelEntity(entity, Enchantments.SWIFTNESS.get(), 5,10, Effects.SPEED, EquipmentSlotType.LEGS);
+		EnchantmentUtils.AddEffectBasedOnLevelEntity(entity, Enchantments.SWIFTNESS.get(), 6,10, Effects.SPEED, EquipmentSlotType.LEGS);
+		
+		
 		}
 			}
 		}

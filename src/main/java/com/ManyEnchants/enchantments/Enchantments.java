@@ -13,10 +13,17 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import util.EnchantmentAddEffect;
+import util.EnchantmentAddSpecialEffects;
 import util.EnchantmentBase;
 import util.UltraDamageEnchantment;
 
 public class Enchantments {
+	
+	public static int ViperLevel;
+	public static int SlownessLevel;
+	public static int WeaknessLevel;
+	public static int UndeadLevel;
+	
 	private static final DeferredRegister<Enchantment> ENCHANTMENT = DeferredRegister
 			.create(ForgeRegistries.ENCHANTMENTS, ManyEnchants.MOD_ID);
 
@@ -84,8 +91,7 @@ public class Enchantments {
 	public static RegistryObject<Enchantment> SUPER_SHARPNESS = ENCHANTMENT.register("super_sharpness",
 			() -> new UltraDamageEnchantment(Rarity.COMMON, EnchantmentType.WEAPON, null, 2));
 	
-	
-	public static RegistryObject<Enchantment> DOLPHIN_BLESSED = ENCHANTMENT.register("dolphin_blessed",
+		public static RegistryObject<Enchantment> DOLPHIN_BLESSED = ENCHANTMENT.register("dolphin_blessed",
 			() -> new DolphinBlessedEnchantment(Rarity.COMMON, EnchantmentType.ARMOR_FEET,
 					new EquipmentSlotType[] { EquipmentSlotType.FEET }));
 	
@@ -119,5 +125,22 @@ public class Enchantments {
 	public static RegistryObject<Enchantment> LIFE_STEAL = ENCHANTMENT.register("life_steal",
 			() -> new EnchantmentBase(Rarity.VERY_RARE, EnchantmentType.WEAPON, null, 1, 6, false, true, true, true,
 					true));
+	public static RegistryObject<Enchantment> VIPER = ENCHANTMENT.register("viper",
+			() -> new EnchantmentAddSpecialEffects(Rarity.VERY_RARE, EnchantmentType.WEAPON, null, 1, ViperLevel, false, true, true, true,
+					true, "viper"));
+	public static RegistryObject<Enchantment> SLOW_ESSENCE = ENCHANTMENT.register("slow_essence",
+			() -> new EnchantmentAddSpecialEffects(Rarity.VERY_RARE, EnchantmentType.WEAPON, null, 1, SlownessLevel, false, true, true, true,
+					true, "slowness"));
+	public static RegistryObject<Enchantment> WEAK_INFUSER = ENCHANTMENT.register("weak_infuser",
+			() -> new EnchantmentAddSpecialEffects(Rarity.VERY_RARE, EnchantmentType.WEAPON, null, 1, WeaknessLevel, false, true, true, true,
+					true, "weak"));
+	public static RegistryObject<Enchantment> UNDEAD_REVIVE = ENCHANTMENT.register("undead_revive",
+			() -> new EnchantmentAddSpecialEffects(Rarity.VERY_RARE, EnchantmentType.WEAPON, null, 1, UndeadLevel, false, true, true, true,
+					true, "undead_revive"));
+	
+	public static RegistryObject<Enchantment> DEATH_STRIKE = ENCHANTMENT.register("death_strike",
+			() -> new DeathStrikeEnchantment(Rarity.COMMON, EnchantmentType.WEAPON,
+					null));
+
 
 }

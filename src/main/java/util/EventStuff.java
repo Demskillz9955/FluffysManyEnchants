@@ -75,7 +75,7 @@ public class EventStuff {
 	}
 
 	@SubscribeEvent
-	public static void Breakable(LivingAttackEvent event) {
+	public static void Breakable(AttackEntityEvent event) {
 		LivingEntity player = event.getEntityLiving();
 		if (player.hasItemInSlot(EquipmentSlotType.MAINHAND)
 				&& EnchantmentHelper.getEnchantmentLevel(CurseEnchantments.BREAKABLE.get(),
@@ -88,7 +88,7 @@ public class EventStuff {
 	}
 
 	@SubscribeEvent
-	public static void breakable(PlayerTickEvent event) {
+	public static void otherTicks(PlayerTickEvent event) {
 
 		PlayerEntity player = event.player;
 

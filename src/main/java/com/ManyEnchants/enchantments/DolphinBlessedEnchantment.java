@@ -20,6 +20,7 @@ public class DolphinBlessedEnchantment extends Enchantment {
 
 	protected DolphinBlessedEnchantment(Rarity rarityIn, EnchantmentType typeIn, EquipmentSlotType[] slots) {
 		super(rarityIn, typeIn, slots);
+		
 	}
 
 	@Override

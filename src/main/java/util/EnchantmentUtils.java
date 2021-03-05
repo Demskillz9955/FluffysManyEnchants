@@ -2,6 +2,7 @@ package util;
 
 import java.util.Random;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
@@ -32,6 +33,21 @@ public class EnchantmentUtils {
 
 	}
 
+	public static void placeBlockAcordingToEnchantmentLevel(BlockState replaceBlock, Enchantment enchant, int enchantmentLevel,World world, PlayerEntity player,EquipmentSlotType type) {
+		if (player.hasItemInSlot(type)
+				&& EnchantmentHelper.getEnchantmentLevel(enchant, player.getItemStackFromSlot(type)) == enchantmentLevel) {
+		if(world.getBlockState(player.getPosition().down()) == Blocks.STONE.getDefaultState()) {
+			world.setBlockState(player.getPosition().down(), replaceBlock);
+		}
+			
+		}
+		
+	}
+	
+	public static int randomInt() {
+		return (int) Math.random() * 10;
+	}
+	
 	public static void EffectAddEntity(LivingEntity entity, World worldIn, Effect effect, int effectTime,
 			int effectLevel, boolean particles, boolean shown) {
 		entity.addPotionEffect(new EffectInstance(effect, effectTime, effectLevel, particles, shown));

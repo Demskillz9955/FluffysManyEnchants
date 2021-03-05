@@ -18,6 +18,7 @@ import net.minecraftforge.event.TickEvent.PlayerTickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
+import util.Config;
 import util.EnchantmentUtils;
 
 public class levitationEnchantment extends Enchantment{
@@ -107,7 +108,7 @@ player.addPotionEffect(new EffectInstance(Effects.LEVITATION, 6,10));}
 		EnchantmentUtils.AddEffectBasedOnLevel(player, Enchantments.LEVITATION.get(), 4,100, Effects.LEVITATION, EquipmentSlotType.FEET);
 		EnchantmentUtils.AddEffectBasedOnLevel(player, Enchantments.LEVITATION.get(), 5,100, Effects.LEVITATION, EquipmentSlotType.FEET);
 		EnchantmentUtils.AddEffectBasedOnLevel(player, Enchantments.LEVITATION.get(), 6,100, Effects.LEVITATION, EquipmentSlotType.FEET);*/
-			System.out.println("working");
+			
 			EnchantmentUtils.DamageItemInHand(player, worldIn, EquipmentSlotType.FEET, 1);
 		}else {
 		
