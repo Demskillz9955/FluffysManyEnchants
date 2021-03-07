@@ -5,6 +5,6 @@ Adds many new Enchantments!!
 
 If you wan't to report a bug or submit an issue feel free too and ill get to it asap
 
-also if you have an idea send it to me.
+also if you have an idea.
 
 
