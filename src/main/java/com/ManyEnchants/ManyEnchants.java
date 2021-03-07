@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.ManyEnchants.enchantments.CurseEnchantments;
 import com.ManyEnchants.enchantments.Enchantments;
+import com.ManyEnchants.enchantments.Enchantments2;
 import com.ManyEnchants.enchantments.SwiftnessEnchantment;
 
 import net.minecraft.block.Block;
@@ -50,6 +51,7 @@ public class ManyEnchants {
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
 		Enchantments.init();
+		Enchantments2.init();
 		CurseEnchantments.init();
 
 		MinecraftForge.EVENT_BUS.register(this);
