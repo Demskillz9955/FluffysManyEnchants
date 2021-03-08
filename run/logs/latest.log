@@ -1,15 +1,10 @@
-[09Feb2021 21:48:29.184] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20201102.104115, --fml.mcVersion, 1.16.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 35.1.13, --version, MOD_DEV, --assetIndex, 1.16, --assetsDir, C:\Users\big_r\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[09Feb2021 21:48:29.192] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.6+85+master.325de55 starting: java version 1.8.0_271 by Oracle Corporation
-[09Feb2021 21:48:30.341] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[09Feb2021 21:48:30.447] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/big_r/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
-[09Feb2021 21:48:36.203] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\big_r\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ????????, --userProperties, {}]
-etsDir, C:\Users\big_r\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[09Feb2021 21:48:32.394] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.6+85+master.325de55 starting: java version 1.8.0_271 by Oracle Corporation
-[09Feb2021 21:48:34.480] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[09Feb2021 21:48:34.646] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/big_r/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
-[09Feb2021 21:48:42.814] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\big_r\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ????????, --userProperties, {}]
-[09Feb2021 21:49:06.021] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[09Feb2021 21:49:07.178] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
+[07Mar2021 18:32:22.879] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20201102.104115, --fml.mcVersion, 1.16.4, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 35.1.13, --version, MOD_DEV, --assetIndex, 1.16, --assetsDir, C:\Users\big_r\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[07Mar2021 18:32:22.882] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.6+85+master.325de55 starting: java version 1.8.0_271 by Oracle Corporation
+[07Mar2021 18:32:23.604] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[07Mar2021 18:32:23.650] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/big_r/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
+[07Mar2021 18:32:25.787] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\big_r\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[07Mar2021 18:32:34.417] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[07Mar2021 18:32:35.988] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
 com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:97) ~[authlib-2.1.28.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:40) ~[authlib-2.1.28.jar:?]
@@ -28,17 +23,17 @@ com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.6.jar:?]
 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.6.jar:?]
 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:105) [forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-recomp.jar:?]
-[09Feb2021 21:49:07.192] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[09Feb2021 21:49:07.780] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
-[09Feb2021 21:49:11.440] [modloading-worker-2/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 35.1.13, for MC 1.16.4 with MCP 20201102.104115
-[09Feb2021 21:49:11.440] [modloading-worker-2/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v35.1.13 Initialized
-[09Feb2021 21:49:12.217] [Render thread/INFO] [com.ManyEnchants.ManyEnchants/]: HELLO from Register Block
-[09Feb2021 21:49:15.349] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
-[09Feb2021 21:49:15.506] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
-[09Feb2021 21:49:15.659] [Worker-Main-10/INFO] [com.ManyEnchants.ManyEnchants/]: Loading Fluffys Many Enchantments
-[09Feb2021 21:49:15.659] [Worker-Main-10/INFO] [com.ManyEnchants.ManyEnchants/]: Enjoy the mod :)
-[09Feb2021 21:49:15.858] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [manyenchants] Starting version check at http://myurl.me/
-[09Feb2021 21:49:16.234] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+[07Mar2021 18:32:35.999] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[07Mar2021 18:32:36.291] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[07Mar2021 18:32:37.517] [modloading-worker-4/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 35.1.13, for MC 1.16.4 with MCP 20201102.104115
+[07Mar2021 18:32:37.517] [modloading-worker-4/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v35.1.13 Initialized
+[07Mar2021 18:32:37.956] [Render thread/INFO] [com.ManyEnchants.ManyEnchants/]: HELLO from Register Block
+[07Mar2021 18:32:40.554] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[07Mar2021 18:32:40.671] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[07Mar2021 18:32:40.743] [Worker-Main-8/INFO] [com.ManyEnchants.ManyEnchants/]: Loading Fluffys Many Enchantments
+[07Mar2021 18:32:40.743] [Worker-Main-8/INFO] [com.ManyEnchants.ManyEnchants/]: Enjoy the mod :)
+[07Mar2021 18:32:40.837] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [manyenchants] Starting version check at http://myurl.me/
+[07Mar2021 18:32:40.995] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
 java.io.IOException: Server returned HTTP response code: 403 for URL: http://myurl.me/
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_271]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_271]
@@ -60,99 +55,67 @@ Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL:
 	at java.net.HttpURLConnection.getResponseCode(Unknown Source) ~[?:1.8.0_271]
 	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:155) ~[forge:?]
 	... 3 more
-[09Feb2021 21:49:16.236] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[09Feb2021 21:49:16.812] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 35.1.13 Target: 35.1.37
-[09Feb2021 21:49:29.325] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
-[09Feb2021 21:49:29.326] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
-[09Feb2021 21:49:29.593] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[09Feb2021 21:49:29.721] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[09Feb2021 21:49:29.721] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[09Feb2021 21:49:29.724] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[09Feb2021 21:49:29.726] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[09Feb2021 21:49:29.727] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[09Feb2021 21:49:29.728] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[09Feb2021 21:49:30.263] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[09Feb2021 21:49:30.265] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[09Feb2021 21:49:30.266] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[09Feb2021 21:49:30.946] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[09Feb2021 21:50:07.751] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[09Feb2021 21:50:07.752] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Feb2021 21:50:07.753] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Feb2021 21:50:07.754] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[09Feb2021 21:50:07.756] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[09Feb2021 21:50:07.763] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-recomp.jar
-[09Feb2021 21:50:09.715] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
-[09Feb2021 21:50:11.057] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
-[09Feb2021 21:50:11.250] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[09Feb2021 21:50:11.396] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry Enchantment: Object did not get ID it asked for. Name: manyenchants:ore_spawn Expected: 62 Got: 65
-[09Feb2021 21:50:12.500] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[09Feb2021 21:50:12.563] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.4
-[09Feb2021 21:50:12.563] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[09Feb2021 21:50:13.606] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[09Feb2021 21:50:14.192] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[09Feb2021 21:50:14.193] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
-[09Feb2021 21:50:14.595] [Server thread/INFO] [com.ManyEnchants.ManyEnchants/]: Loading Fluffys Many Enchantments
-[09Feb2021 21:50:14.608] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 984 ms
-[09Feb2021 21:50:14.921] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
-[09Feb2021 21:50:22.351] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
-[09Feb2021 21:50:22.457] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@697fcdb7
-[09Feb2021 21:50:22.491] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:601d809c] logged in with entity id 96 at (-4.640393171919081, 5.02442408821368, 207.3582267797228)
-[09Feb2021 21:50:22.542] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[09Feb2021 21:50:22.685] [Server thread/ERROR] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: Exception caught during firing event: null
-	Index: 9
-	Listeners:
-		0: NORMAL
-		1: ASM: class com.ManyEnchants.enchantments.DolphinBlessedEnchantment$Blessing DolphinBless(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		2: ASM: class com.ManyEnchants.enchantments.EarthenEnchantment$Earthen GetPlayerDimension(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		3: ASM: class com.ManyEnchants.enchantments.GoldenTouchEnchantment GroundReform(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		4: ASM: class com.ManyEnchants.enchantments.HasteEnchantment Haste(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		5: ASM: class com.ManyEnchants.enchantments.HealthEnchantment$Health health(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		6: ASM: class com.ManyEnchants.enchantments.HeroismEnchantment$Heroism heroism(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		7: ASM: class com.ManyEnchants.enchantments.levitationEnchantment$Levitate Explosion(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		8: ASM: class com.ManyEnchants.enchantments.LightnessEnchantment$Lightness LightNess(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		9: ASM: class com.ManyEnchants.enchantments.OreSpawnEnchantment OreSpawn(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		10: ASM: class com.ManyEnchants.enchantments.SkyFighterEnchantment$SkyFighter GetPlayerY(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		11: ASM: class com.ManyEnchants.enchantments.SwiftnessEnchantment$Speed SwiftNess(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-		12: ASM: class util.EventStuff breakable(Lnet/minecraftforge/event/TickEvent$PlayerTickEvent;)V
-java.lang.NullPointerException
-	at util.EnchantmentUtils.placeBlockAcordingToEnchantmentLevel(EnchantmentUtils.java:37)
-	at com.ManyEnchants.enchantments.OreSpawnEnchantment.OreSpawn(OreSpawnEnchantment.java:35)
-	at net.minecraftforge.eventbus.ASMEventHandler_26_OreSpawnEnchantment_OreSpawn_PlayerTickEvent.invoke(.dynamic)
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85)
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297)
-	at net.minecraftforge.fml.hooks.BasicEventHooks.onPlayerPreTick(BasicEventHooks.java:85)
-	at net.minecraft.entity.player.PlayerEntity.tick(PlayerEntity.java:200)
-	at net.minecraft.entity.player.ServerPlayerEntity.playerTick(ServerPlayerEntity.java:422)
-	at net.minecraft.network.play.ServerPlayNetHandler.tick(ServerPlayNetHandler.java:212)
-	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:248)
-	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:151)
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:898)
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:820)
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:84)
-	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:663)
-	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:233)
-	at java.lang.Thread.run(Unknown Source)
-
-[09Feb2021 21:50:22.697] [Server thread/FATAL] [net.minecraftforge.common.ForgeMod/]: Preparing crash report with UUID 32cf4393-5f3f-43a0-8689-9bce1e272439
-[09Feb2021 21:50:22.699] [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: Encountered an unexpected exception
-net.minecraft.crash.ReportedException: Ticking player
-	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:154) ~[forge:?]
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:898) ~[forge:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:820) ~[forge:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:84) ~[forge:?]
-	at net.minecraft.server.MinecraftServer.func_240802_v_(MinecraftServer.java:663) ~[forge:?]
-	at net.minecraft.server.MinecraftServer.lambda$startServer$0(MinecraftServer.java:233) ~[forge:?]
-	at java.lang.Thread.run(Unknown Source) [?:1.8.0_271]
-Caused by: java.lang.NullPointerException
-	at util.EnchantmentUtils.placeBlockAcordingToEnchantmentLevel(EnchantmentUtils.java:37) ~[main/:?]
-	at com.ManyEnchants.enchantments.OreSpawnEnchantment.OreSpawn(OreSpawnEnchantment.java:35) ~[main/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler_26_OreSpawnEnchantment_OreSpawn_PlayerTickEvent.invoke(.dynamic) ~[?:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-3.0.5-service.jar:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:297) ~[eventbus-3.0.5-service.jar:?]
-	at net.minecraftforge.fml.hooks.BasicEventHooks.onPlayerPreTick(BasicEventHooks.java:85) ~[forge:?]
-	at net.minecraft.entity.player.PlayerEntity.tick(PlayerEntity.java:200) ~[forge:?]
-	at net.minecraft.entity.player.ServerPlayerEntity.playerTick(ServerPlayerEntity.java:422) ~[forge:?]
-	at net.minecraft.network.play.ServerPlayNetHandler.tick(ServerPlayNetHandler.java:212) ~[forge:?]
-	at net.minecraft.network.NetworkManager.tick(NetworkManager.java:248) ~[forge:?]
-	at net.minecraft.network.NetworkSystem.tick(NetworkSystem.java:151) ~[forge:?]
-	... 6 more
+[07Mar2021 18:32:40.999] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[07Mar2021 18:32:41.433] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 35.1.13 Target: 35.1.37
+[07Mar2021 18:32:52.507] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[07Mar2021 18:32:52.509] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[07Mar2021 18:32:53.115] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[07Mar2021 18:32:53.322] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[07Mar2021 18:32:53.323] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[07Mar2021 18:32:53.325] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[07Mar2021 18:32:53.328] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[07Mar2021 18:32:53.328] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[07Mar2021 18:32:53.331] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[07Mar2021 18:32:54.462] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[07Mar2021 18:32:54.466] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[07Mar2021 18:32:54.468] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[07Mar2021 18:32:55.255] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[07Mar2021 18:33:18.078] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[07Mar2021 18:33:18.079] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07Mar2021 18:33:18.081] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07Mar2021 18:33:18.082] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[07Mar2021 18:33:18.082] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[07Mar2021 18:33:18.087] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.4-35.1.13_mapped_snapshot_20201028-1.16.3-recomp.jar
+[07Mar2021 18:33:19.157] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[07Mar2021 18:33:19.838] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
+[07Mar2021 18:33:19.963] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[07Mar2021 18:33:20.910] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[07Mar2021 18:33:20.940] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.4
+[07Mar2021 18:33:20.940] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[07Mar2021 18:33:21.193] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[07Mar2021 18:33:22.975] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[07Mar2021 18:33:22.975] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[07Mar2021 18:33:22.975] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[07Mar2021 18:33:22.975] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[07Mar2021 18:33:23.257] [Server thread/INFO] [com.ManyEnchants.ManyEnchants/]: Loading Fluffys Many Enchantments
+[07Mar2021 18:33:23.290] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 2084 ms
+[07Mar2021 18:33:23.429] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
+[07Mar2021 18:33:25.013] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[07Mar2021 18:33:25.080] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@113f2b4e
+[07Mar2021 18:33:25.102] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:0542df73] logged in with entity id 94 at (-12.261122405247669, 5.0, 184.47819761020241)
+[07Mar2021 18:33:25.132] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[07Mar2021 18:33:25.429] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[07Mar2021 18:33:25.463] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07Mar2021 18:33:25.613] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 213 advancements
+[07Mar2021 18:33:25.672] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07Mar2021 18:33:25.675] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07Mar2021 18:33:46.058] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[07Mar2021 18:33:46.074] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07Mar2021 18:33:46.106] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07Mar2021 18:33:46.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07Mar2021 18:33:47.899] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[07Mar2021 18:33:47.961] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[07Mar2021 18:33:47.962] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[07Mar2021 18:33:47.978] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[07Mar2021 18:33:48.037] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[07Mar2021 18:33:48.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[07Mar2021 18:33:48.038] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[07Mar2021 18:33:48.039] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[07Mar2021 18:33:48.104] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[07Mar2021 18:33:48.104] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[07Mar2021 18:33:48.104] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[07Mar2021 18:33:48.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[07Mar2021 18:33:48.105] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[07Mar2021 18:33:48.120] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[07Mar2021 18:33:48.123] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[07Mar2021 18:33:48.123] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved

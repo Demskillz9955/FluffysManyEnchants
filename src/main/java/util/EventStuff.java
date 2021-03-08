@@ -3,7 +3,10 @@ package util;
 import com.ManyEnchants.ManyEnchants;
 import com.ManyEnchants.enchantments.CurseEnchantments;
 import com.ManyEnchants.enchantments.Enchantments;
+import com.ManyEnchants.enchantments.Enchantments2;
 
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
@@ -14,9 +17,15 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Effects;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.event.TickEvent.PlayerTickEvent;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.event.entity.living.LivingExperienceDropEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
@@ -89,9 +98,9 @@ public class EventStuff {
 
 	@SubscribeEvent
 	public static void otherTicks(PlayerTickEvent event) {
-
+		ItemStack stack = null;
 		PlayerEntity player = event.player;
-
+		EquipmentSlotType[] type = new EquipmentSlotType[] { EquipmentSlotType.FEET, EquipmentSlotType.LEGS, EquipmentSlotType.CHEST, EquipmentSlotType.HEAD };
 		if (player.hasItemInSlot(EquipmentSlotType.FEET)
 				&& EnchantmentHelper.getEnchantmentLevel(CurseEnchantments.SLOWNESS.get(),
 						player.getItemStackFromSlot(EquipmentSlotType.FEET)) >= 0) {
@@ -112,5 +121,28 @@ public class EventStuff {
 					EquipmentSlotType.HEAD);
 
 		}
+	/*	if (player.hasItemInSlot(EquipmentSlotType.FEET)
+				&& EnchantmentHelper.getEnchantmentLevel(Enchantments2.CURSE_NULLIFIER.get(),
+						player.getItemStackFromSlot(EquipmentSlotType.FEET)) >= 0) {
+*/
+		
 	}
+	@SubscribeEvent
+	public static void deFest(RightClickBlock event) {
+		PlayerEntity player = event.getPlayer();
+		World world = player.world;
+		
+		Block[] infestedBlocks = {Blocks.INFESTED_STONE};
+		
+		BlockPos pos = event.getPos();
+		if (player.hasItemInSlot(EquipmentSlotType.MAINHAND)
+				&& EnchantmentHelper.getEnchantmentLevel(Enchantments2.DE_FESTER.get(),
+						player.getItemStackFromSlot(EquipmentSlotType.MAINHAND)) >= 0) {
+		if(world.getBlockState(pos)== Blocks.INFESTED_STONE.getDefaultState()) {
+			EnchantmentUtils.DamageItemInHand(player, world, EquipmentSlotType.MAINHAND, 10);
+			world.setBlockState(pos, Blocks.STONE.getDefaultState());
+		}
+	}
+	}
+	
 }
